@@ -5,6 +5,28 @@ body{
 .button{
   border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 7px;
   margin-top: 5px;
+}
+
+.button-blue{
+  background-color: #4285f4;
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+}
+
+a:visited{
+  color: white;
+}
+
+.m-t-10{
+  margin-top: 10px;
 }

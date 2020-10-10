@@ -50,9 +50,7 @@ app.manageIconsWrapperSize = function(iconsCount, iconsWrapper, account){
 }
 
 app.setDefaultIconsList = function(){
-  chrome.storage.sync.set({ iconsList: config.defaultIconsList }, function(){
-    console.log('default list loaded')
-  });
+  chrome.storage.sync.set({ iconsList: config.defaultIconsList });
 }
 
 app.syncConfig = function(callback){
@@ -60,11 +58,23 @@ app.syncConfig = function(callback){
 }
 
 app.getAccountId = function(account){
+  var host = window.location.host;
   var accountHref = account.href;
   if(!accountHref){
     return false;
   }
-  var accountId = accountHref.split('=')[1];
+  switch(host){
+    case 'mail.google.com':
+      var accountId = accountHref.split('/')[5];
+    break;
+    case 'drive.google.com':
+      var accountId = accountHref.split('authuser=')[1];
+      accountId = accountId.split('&')[0]
+    break;
+    default:
+      var accountId = accountHref.split('authuser=')[1];
+    break;
+  }
   if(parseInt(accountId) != accountId){
     return false;
   }

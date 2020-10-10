@@ -1,7 +1,7 @@
 {
   "name": "Google Multi-Accounts Services Switcher",
   "description": "This extension helps users with multiple Google accounts to use Google services easier. It adds links to the services (selected by user) under each logged in accounts.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "manifest_version": 2,
   "permissions": [
     "activeTab",
