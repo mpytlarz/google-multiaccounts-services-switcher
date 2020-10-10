@@ -1,0 +1,39 @@
+.accounts_extension_wrapper{
+  height: 30px;
+  padding-bottom: 40px !important;
+  position: relative;
+}
+
+.accounts_extension_wrapper_large{
+  padding-bottom: 70px !important;
+
+}
+
+.accounts_extension_icons{
+    margin-top: -20px;
+    padding: 5px;
+    position: fixed;
+    z-index: 99999;
+    max-width: 200%;
+    margin-left: -90px;
+    transform: scale(0.5);
+    width: 460px;
+}
+
+.accounts_extension_icons_large{
+  margin-top: -40px;
+}
+
+
+.accounts_extension_icon:hover{
+    transform: scale(1.2);
+}
+
+.accounts_extension_icon{
+  background-image: url('https://ssl.gstatic.com/gb/images/p1_a4fff491.png');
+  background-size: 64px 2893px;
+  display: block;
+  float: left;
+  height: 64px;
+  width: 64px;
+}

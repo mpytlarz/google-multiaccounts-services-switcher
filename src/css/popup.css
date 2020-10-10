@@ -1,0 +1,10 @@
+body{
+  width: 500px;
+}
+
+.button{
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
