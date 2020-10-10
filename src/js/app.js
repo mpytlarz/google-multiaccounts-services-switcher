@@ -93,9 +93,9 @@ app.removeIcons = function(){
 }
 
 app.run = function(){
-    app.removeIcons();
     app.syncConfig(function(storage){
       setTimeout(function(){
+        app.removeIcons();
         var accounts = document.getElementsByClassName('gb_Qb');
         for(key in accounts){
           app.createIcons(storage, accounts[key]);
