@@ -35,6 +35,11 @@ app.prepareNewIcon = function(iconTemplate, iconParams, accountId, openTargetBla
   if(openTargetBlank){
     newIcon.target = "_blank";
   }
+  if(iconParams.customCss){
+    for(key in iconParams.customCss){
+      newIcon.style[key] = iconParams.customCss[key];
+    }
+  }
 
   return newIcon;
 }

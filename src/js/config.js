@@ -33,9 +33,15 @@ var config = {
       show: false,
     },
     analytics: {
-      position: '-966px',
+      position: '6px',
       href: 'https://analytics.google.com/analytics/web/provision/?authuser=[ID]',
       show: false,
+      customCss: {
+        backgroundSize: '78% 78%',
+        background: 'url(https://ssl.gstatic.com/analytics/20201009-00/app/static/analytics_standard_icon.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '8px'
+      }
     },
     classroom: {
       position: '-1656px',
