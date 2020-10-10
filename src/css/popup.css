@@ -2,6 +2,24 @@ body{
   width: 500px;
 }
 
+.icons-box{
+  float: left;
+  margin-right: 20px;
+}
+
+.icons-box{
+  padding: 10px;
+}
+
+.extra-config-box{
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.clear{
+  clear: both;
+}
+
 .button{
   border: none;
   cursor: pointer;
@@ -27,6 +45,10 @@ a:visited{
   color: white;
 }
 
-.m-t-10{
-  margin-top: 10px;
+.m-t-5{
+  margin-top: 5px;
+}
+
+label{
+  cursor: pointer;
 }
