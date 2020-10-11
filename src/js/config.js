@@ -53,6 +53,14 @@ var config = {
       href: 'https://photos.google.com/?tab=wq&authuser=[ID]',
       show: false,
     },
+    keep: {
+      position: '0px',
+      href: 'https://keep.google.com/u/[ID]',
+      show: false,
+      customCss: {
+        background: 'url(http://ssl.gstatic.com/gb/images/a/911e3628e6.png)'
+      }
+    },
     play: {
       position: '-897px',
       href: 'https://play.google.com/?authuser=[ID]',
